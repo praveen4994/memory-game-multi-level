@@ -1,9 +1,7 @@
 # MULTI LEVEL MEMORY GAME
 
-## LIVE DEMO
-```
-https://multi-level-memory-game.netlify.app
-```
+## [LIVE DEMO](https://multi-level-memory-game.netlify.app)
+
 ## Project setup
 ```
 npm install
