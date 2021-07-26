@@ -1,5 +1,56 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: "Roboto";
+}
+
+.btn {
+  border: none;
+  color: #000;
+  font-size: 18px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-family: "Roboto";
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  min-width: 100px;
+  &:focus {
+    outline: none;
+  }
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  &.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white;
+    &:hover {
+      color: #fff;
+      background-color: #218838;
+      border-color: #1e7e34;
+    }
+  }
+  &.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    &:hover {
+      color: #fff;
+      background-color: #c82333;
+      border-color: #bd2130;
+    }
+  }
+
+  &.btn-info {
+    border: 1px solid #e0e0e0;
+    background-color: white;
+    color: #666666;
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  }
 }

@@ -136,4 +136,55 @@
       }
     }
   }
+  .game-over,
+  .congrats {
+    .modal {
+      .title {
+        font-size: 40px;
+        color: red;
+        font-weight: bold;
+        margin: 0 auto 10px;
+        text-align: center;
+        &.green {
+          color: green;
+        }
+      }
+      .subtitle {
+        font-size: 30px;
+        color: #b5b5b5;
+        font-weight: bold;
+        margin: 0 auto 50px;
+        text-align: center;
+      }
+      .actions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        .item {
+          margin: 10px;
+        }
+      }
+      .rating {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        margin-bottom: 30px;
+        .star {
+          width: 30px;
+          margin: 0 5px;
+          filter: grayscale(0);
+          &.active {
+            filter: grayscale(1);
+          }
+        }
+      }
+    }
+  }
+  .congrats .modal {
+    .subtitle {
+      margin: 0 auto;
+    }
+  }
 }
