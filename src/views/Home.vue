@@ -119,6 +119,7 @@ export default class Home extends Vue {
   }
 
   private nextLevel() {
+    this.$store.dispatch("NEXT_LEVEL");
     this.setGame(++this.level);
   }
 
@@ -212,7 +213,7 @@ export default class Home extends Vue {
       rating: this.rating,
       sequence: this.sequenceTracker,
     };
-    this.$store.dispatch("NEXT_LEVEL", data);
+    this.$store.dispatch("SAVE_DATA", data);
   }
 }
 </script>
